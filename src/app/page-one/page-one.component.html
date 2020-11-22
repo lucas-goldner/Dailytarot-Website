@@ -5,7 +5,7 @@
     </mat-grid-tile>
   </mat-grid-list>
 
-  <mat-grid-list cols="2" rowHeight="100px">
+  <mat-grid-list cols="2" rowHeight="{{ mobHeight }}">
     <mat-grid-tile
       *ngFor="let tile of tiles2"
       [colspan]="tile.cols"
