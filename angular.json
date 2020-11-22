@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dailytarot-website": {
+    "DailyTarot-Website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/dailytarot-website/browser",
+            "outputPath": "dist/DailyTarot-Website",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "dailytarot-website:build"
+            "browserTarget": "DailyTarot-Website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "dailytarot-website:build:production"
+              "browserTarget": "DailyTarot-Website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "dailytarot-website:build"
+            "browserTarget": "DailyTarot-Website:build"
           }
         },
         "test": {
@@ -104,8 +104,7 @@
             "tsConfig": [
               "tsconfig.app.json",
               "tsconfig.spec.json",
-              "e2e/tsconfig.json",
-              "tsconfig.server.json"
+              "e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -116,66 +115,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "dailytarot-website:serve"
+            "devServerTarget": "DailyTarot-Website:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "dailytarot-website:serve:production"
+              "devServerTarget": "DailyTarot-Website:serve:production"
             }
-          }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/dailytarot-website/server",
-            "main": "server.ts",
-            "tsConfig": "tsconfig.server.json"
-          },
-          "configurations": {
-            "production": {
-              "outputHashing": "media",
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "sourceMap": false,
-              "optimization": true
-            }
-          }
-        },
-        "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
-          "options": {
-            "browserTarget": "dailytarot-website:build",
-            "serverTarget": "dailytarot-website:server"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "dailytarot-website:build:production",
-              "serverTarget": "dailytarot-website:server:production"
-            }
-          }
-        },
-        "prerender": {
-          "builder": "@nguniversal/builders:prerender",
-          "options": {
-            "browserTarget": "dailytarot-website:build:production",
-            "serverTarget": "dailytarot-website:server:production",
-            "routes": [
-              "/"
-            ]
-          },
-          "configurations": {
-            "production": {}
           }
         }
       }
     }
   },
-  "defaultProject": "dailytarot-website",
+  "defaultProject": "DailyTarot-Website",
   "cli": {
-    "analytics": "4efa6ffd-3521-484f-a120-682a2201f229"
+    "analytics": "806937da-b0a9-4b18-89d6-2afabb676723"
   }
 }

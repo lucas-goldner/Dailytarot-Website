@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'dailytarot-website'`, () => {
+  it(`should have as title 'DailyTarot-Website'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('dailytarot-website');
+    expect(app.title).toEqual('DailyTarot-Website');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('dailytarot-website app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('DailyTarot-Website app is running!');
   });
 });
