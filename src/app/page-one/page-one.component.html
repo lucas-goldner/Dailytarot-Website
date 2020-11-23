@@ -9,12 +9,14 @@
     </mat-grid-tile>
   </mat-grid-list>
 
-  <mat-grid-list *ngIf="!isTouch" cols="2" rowHeight="{{ mobHeight }}">
-    <mat-grid-tile> One </mat-grid-tile>
-    <mat-grid-tile> Two </mat-grid-tile>
+  <mat-grid-list *ngIf="!isTouch" cols="2" rows="4" rowHeight="{{ mobHeight }}">
+    <mat-grid-tile rowspan="2" colspan="1"> One </mat-grid-tile>
+    <mat-grid-tile rowspan="4" colspan="1"> Two </mat-grid-tile>
+    <mat-grid-tile rowspan="1" colspan="1"> Three </mat-grid-tile>
+    <mat-grid-tile rowspan="1" colspan="1"> Four </mat-grid-tile>
   </mat-grid-list>
 
-  <mat-grid-list *ngIf="isTouch" cols="1" rowHeight="{{ mobHeight }}">
+  <mat-grid-list *ngIf="isTouch" cols="1" rowHeight="{{ mobMobHeight }}">
     <mat-grid-tile> One </mat-grid-tile>
     <mat-grid-tile> Two </mat-grid-tile>
   </mat-grid-list>

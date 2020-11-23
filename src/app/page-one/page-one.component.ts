@@ -14,6 +14,7 @@ export interface Tile {
 })
 export class PageOneComponent implements OnInit {
   mobHeight: any;
+  mobMobHeight: any;
   mobWidth: any;
   isTouch: any;
 
@@ -26,7 +27,8 @@ export class PageOneComponent implements OnInit {
   ];
 
   constructor() {
-    this.mobHeight = window.screen.height - 100 + 'px';
+    this.mobHeight = window.screen.height / 6 + 'px';
+    this.mobMobHeight = window.screen.height - 100 + 'px';
     this.mobWidth = window.screen.width + 'px';
     console.log(this.mobHeight);
   }
