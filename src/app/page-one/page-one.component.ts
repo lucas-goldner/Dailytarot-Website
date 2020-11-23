@@ -4,6 +4,7 @@ import { HostListener } from '@angular/core';
 export interface Tile {
   cols: number;
   text: string;
+  class: string;
 }
 
 export interface Tile2 {
@@ -23,11 +24,11 @@ export class PageOneComponent implements OnInit {
   isTouch: any;
 
   tiles: Tile[] = [
-    { text: 'DailyTarot', cols: 3 },
-    { text: 'About', cols: 1 },
-    { text: 'Features', cols: 1 },
-    { text: 'Download', cols: 1 },
-    { text: 'Contact', cols: 1 },
+    { text: 'DailyTarot', cols: 2, class: 'navTitle' },
+    { text: 'About', cols: 1, class: 'navText' },
+    { text: 'Features', cols: 1, class: 'navText' },
+    { text: 'Download', cols: 1, class: 'navText' },
+    { text: 'Contact', cols: 1, class: 'navText' },
   ];
 
   tiles2: Tile2[] = [

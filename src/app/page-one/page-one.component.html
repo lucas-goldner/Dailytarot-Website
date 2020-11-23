@@ -1,11 +1,25 @@
 <div class="container">
-  <mat-grid-list cols="7" rowHeight="100px">
-    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols">
+  <mat-grid-list cols="6" rowHeight="100px">
+    <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [class]="tile.class"
+    >
       {{ tile.text }}
     </mat-grid-tile>
   </mat-grid-list>
 
-  <mat-grid-list cols="2" rowHeight="{{ mobHeight }}">
+  <mat-grid-list *ngIf="!isTouch" cols="2" rowHeight="{{ mobHeight }}">
+    <mat-grid-tile
+      *ngFor="let tile of tiles2"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+    >
+      {{ tile.text }}
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list *ngIf="isTouch" cols="1" rowHeight="{{ mobHeight }}">
     <mat-grid-tile
       *ngFor="let tile of tiles2"
       [colspan]="tile.cols"

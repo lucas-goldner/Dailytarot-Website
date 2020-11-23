@@ -2,3 +2,12 @@
   background-color: #493ff0;
   color: whitesmoke;
 }
+
+.navTitle {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.navText {
+  font-weight: lighter;
+}
