@@ -17,6 +17,10 @@
   }
 }
 
+.downloadImage {
+  height: 100px;
+}
+
 .navText {
   font-weight: 500;
 }
