@@ -19,7 +19,11 @@ export class PageOneComponent implements OnInit {
   isTouch: any;
 
   tiles: Tile[] = [
-    { text: 'DailyTarot', cols: 2, class: 'navTitle' },
+    {
+      text: 'DailyTarot',
+      cols: 2,
+      class: 'navTitle',
+    },
     { text: 'About', cols: 1, class: 'navText' },
     { text: 'Features', cols: 1, class: 'navText' },
     { text: 'Download', cols: 1, class: 'navText' },
@@ -37,7 +41,6 @@ export class PageOneComponent implements OnInit {
     var el = document.createElement('div');
     el.setAttribute('ontouchstart', 'return;');
     this.isTouch = typeof el.ontouchstart === 'function';
-    console.log(this.isTouch);
   }
 
   ngOnInit(): void {

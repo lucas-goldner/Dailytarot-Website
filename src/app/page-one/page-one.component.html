@@ -10,7 +10,13 @@
   </mat-grid-list>
 
   <mat-grid-list *ngIf="!isTouch" cols="2" rows="4" rowHeight="{{ mobHeight }}">
-    <mat-grid-tile rowspan="2" colspan="1"> One </mat-grid-tile>
+    <mat-grid-tile rowspan="2" colspan="1">
+      <h1 class="mat-display-3">
+        Daily Tarot - <br />
+        Discover something <br />
+        new everyday!
+      </h1>
+    </mat-grid-tile>
     <mat-grid-tile rowspan="4" colspan="1"> Two </mat-grid-tile>
     <mat-grid-tile rowspan="1" colspan="1"> Three </mat-grid-tile>
     <mat-grid-tile rowspan="1" colspan="1"> Four </mat-grid-tile>
