@@ -10,22 +10,12 @@
   </mat-grid-list>
 
   <mat-grid-list *ngIf="!isTouch" cols="2" rowHeight="{{ mobHeight }}">
-    <mat-grid-tile
-      *ngFor="let tile of tiles2"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-    >
-      {{ tile.text }}
-    </mat-grid-tile>
+    <mat-grid-tile> One </mat-grid-tile>
+    <mat-grid-tile> Two </mat-grid-tile>
   </mat-grid-list>
 
   <mat-grid-list *ngIf="isTouch" cols="1" rowHeight="{{ mobHeight }}">
-    <mat-grid-tile
-      *ngFor="let tile of tiles2"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-    >
-      {{ tile.text }}
-    </mat-grid-tile>
+    <mat-grid-tile> One </mat-grid-tile>
+    <mat-grid-tile> Two </mat-grid-tile>
   </mat-grid-list>
 </div>

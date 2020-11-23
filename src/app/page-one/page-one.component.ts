@@ -7,12 +7,6 @@ export interface Tile {
   class: string;
 }
 
-export interface Tile2 {
-  cols: number;
-  rows: number;
-  text: string;
-}
-
 @Component({
   selector: 'app-page-one',
   templateUrl: './page-one.component.html',
@@ -31,10 +25,6 @@ export class PageOneComponent implements OnInit {
     { text: 'Contact', cols: 1, class: 'navText' },
   ];
 
-  tiles2: Tile2[] = [
-    { text: 'One', cols: 1, rows: 1 },
-    { text: 'Two', cols: 1, rows: 1 },
-  ];
   constructor() {
     this.mobHeight = window.screen.height - 100 + 'px';
     this.mobWidth = window.screen.width + 'px';
