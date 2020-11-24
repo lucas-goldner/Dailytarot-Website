@@ -1,5 +1,7 @@
 .container {
-  background-color: #493ff0;
+  background-image: url("../../assets/images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: whitesmoke;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif Helvetica,
@@ -46,4 +48,9 @@
 
 .custom-shape-divider-top-1606174240 .shape-fill {
   fill: #493ff0;
+}
+
+.phones {
+  height: 40rem;
+  width: "100%";
 }
