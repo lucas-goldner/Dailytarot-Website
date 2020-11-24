@@ -21,6 +21,29 @@
   height: 100px;
 }
 
+.secondTitle {
+  margin-right: 11rem;
+}
+
 .navText {
   font-weight: 500;
+}
+.custom-shape-divider-top-1606174240 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1606174240 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 179px;
+}
+
+.custom-shape-divider-top-1606174240 .shape-fill {
+  fill: #493ff0;
 }
