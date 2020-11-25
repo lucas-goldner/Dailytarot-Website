@@ -7,9 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { PageOneComponent } from './page-one/page-one.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { PageTwoComponent } from './page-two/page-two.component';
 
 @NgModule({
-  declarations: [AppComponent, PageOneComponent],
+  declarations: [AppComponent, PageOneComponent, PageTwoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
