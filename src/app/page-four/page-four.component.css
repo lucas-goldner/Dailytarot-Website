@@ -1,7 +1,7 @@
-.pageThreeTitle {
-  color: rgb(212, 138, 0);
+.pageFourTitle {
+  color: rgb(59, 0, 99);
   font-weight: 100;
-  background-color: rgb(255, 255, 0, 0.2);
+  background-color: rgba(183, 0, 255, 0.2);
   border-style: solid;
   border-radius: 10px;
   border-width: 10px;
@@ -13,7 +13,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .pageThreeTitle {
+  .pageFourTitle {
     margin-left: 10rem;
   }
 }

@@ -1,0 +1,55 @@
+<mat-grid-list *ngIf="!isTouch" cols="6" rowHeight="6rem">
+  <mat-grid-tile rowspan="6" colspan="3">
+    <img src="../../assets/images/phoneShowTwo.png" />
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2" colspan="3"
+    ><h2 class="pageFourTitle">Even More</h2>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2" colspan="2"
+    ><div class="con">
+      <img class="iconImage" src="../../assets/images/icon_3.png" />
+      <p>
+        DailyTarot saves all of your progress locally.<br />If you want to
+        secure your data you can create an account
+      </p>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2" colspan="2">
+    <div class="con" style="margin-left: 2rem">
+      <img class="iconImage" src="../../assets/images/icon_4.png" />
+      <p>
+        Make discoveries about your life, that you did not even expect <br />
+        yet I hope that this app can trigger a change in you, <br />
+        but you need to give it a chance first.
+      </p>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list *ngIf="isTouch" cols="1" rowHeight="6rem">
+  <mat-grid-tile rowspan="2">
+    <h2 class="pageFourTitle">Even More</h2></mat-grid-tile
+  >
+  <mat-grid-tile rowspan="6">
+    <img src="../../assets/images/phoneShowTwo.png" />
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="1"
+    ><img class="iconImage" src="../../assets/images/icon_3.png" />
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2">
+    <p>
+      Quickly take your notes and make new experiences faster.<br />Daily Tarot
+      makes sure everything is quickly backed up!
+    </p>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="1"
+    ><img class="iconImage" src="../../assets/images/icon_4.png" />
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2">
+    <p>
+      Everyday at 00:00 you will receive a new card. <br />
+      By taking many notes everyday You will start building<br />
+      your own story with amazing!
+    </p></mat-grid-tile
+  >
+</mat-grid-list>

@@ -9,9 +9,10 @@ import { PageOneComponent } from './page-one/page-one.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { PageTwoComponent } from './page-two/page-two.component';
 import { PageThreeComponent } from './page-three/page-three.component';
+import { PageFourComponent } from './page-four/page-four.component';
 
 @NgModule({
-  declarations: [AppComponent, PageOneComponent, PageTwoComponent, PageThreeComponent],
+  declarations: [AppComponent, PageOneComponent, PageTwoComponent, PageThreeComponent, PageFourComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
