@@ -7,3 +7,13 @@
   border-width: 10px;
   border-color: rgba(238, 130, 238, 0);
 }
+
+@media screen and (min-width: 1000px) {
+  .pageTitle {
+    margin-right: 33rem;
+  }
+
+  .h2Title {
+    margin-right: 29rem;
+  }
+}
