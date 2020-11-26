@@ -1,21 +1,55 @@
 <mat-grid-list *ngIf="!isTouch" cols="3" rowHeight="6rem">
-  <mat-grid-tile rowspan="2" colspan="2"> Features of the App </mat-grid-tile>
-  <mat-grid-tile rowspan="6">
+  <mat-grid-tile rowspan="2" colspan="2"
+    ><h2 class="pageThreeTitle">Features of the App</h2></mat-grid-tile
+  >
+  <mat-grid-tile rowspan="7">
     <img src="../../assets/images/phoneShow.png" />
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2"> Icon 1 </mat-grid-tile>
-  <mat-grid-tile rowspan="2"> Descr 1 </mat-grid-tile>
-  <mat-grid-tile rowspan="2"> Icon 2 </mat-grid-tile>
-  <mat-grid-tile rowspan="2"> Descr 2 </mat-grid-tile>
+  <mat-grid-tile rowspan="2" colspan="2">
+    <div class="con">
+      <img class="iconImage" src="../../assets/images/icon_1.png" />
+      <p>
+        Quickly take your notes and make new experiences faster.<br />Daily
+        Tarot makes sure everything is quickly backed up!
+      </p>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2" colspan="2">
+    <div class="con" style="margin-right: 2.5rem">
+      <img class="iconImage" src="../../assets/images/icon_2.png" />
+      <p>
+        Everyday at 00:00 you will receive a new card. <br />
+        By taking many notes everyday You will start building<br />
+        your own story with amazing!
+      </p>
+    </div>
+  </mat-grid-tile>
 </mat-grid-list>
 
 <mat-grid-list *ngIf="isTouch" cols="1" rowHeight="6rem">
-  <mat-grid-tile rowspan="2"> Features of the App </mat-grid-tile>
+  <mat-grid-tile rowspan="2">
+    <h2 class="pageThreeTitle">Features of the App</h2></mat-grid-tile
+  >
   <mat-grid-tile rowspan="6">
     <img src="../../assets/images/phoneShow.png" />
   </mat-grid-tile>
-  <mat-grid-tile rowspan="1"> Icon 1 </mat-grid-tile>
-  <mat-grid-tile rowspan="2"> Descr 1 </mat-grid-tile>
-  <mat-grid-tile rowspan="1"> Icon 2 </mat-grid-tile>
-  <mat-grid-tile rowspan="2"> Descr 2 </mat-grid-tile>
+  <mat-grid-tile rowspan="1"
+    ><img class="iconImage" src="../../assets/images/icon_1.png" />
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2">
+    <p>
+      Quickly take your notes and make new experiences faster.<br />Daily Tarot
+      makes sure everything is quickly backed up!
+    </p>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="1"
+    ><img class="iconImage" src="../../assets/images/icon_2.png" />
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2">
+    <p>
+      Everyday at 00:00 you will receive a new card. <br />
+      By taking many notes everyday You will start building<br />
+      your own story with amazing!
+    </p></mat-grid-tile
+  >
 </mat-grid-list>

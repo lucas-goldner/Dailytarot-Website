@@ -1,0 +1,25 @@
+.pageThreeTitle {
+  color: rgb(212, 138, 0);
+  font-weight: 100;
+  background-color: rgb(255, 255, 0, 0.2);
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: rgb(255, 255, 0, 0.05);
+}
+
+.iconImage {
+  transform: scale(0.5);
+}
+
+.pageThreeTitle {
+  margin-left: 10rem;
+}
+
+.con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
