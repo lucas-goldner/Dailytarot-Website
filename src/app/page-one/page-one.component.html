@@ -5,7 +5,9 @@
       [colspan]="tile.cols"
       [class]="tile.class"
     >
-      {{ tile.text }}
+      <a [href]="tile.href">
+        {{ tile.text }}
+      </a>
     </mat-grid-tile>
   </mat-grid-list>
 

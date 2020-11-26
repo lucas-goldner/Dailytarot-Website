@@ -5,6 +5,7 @@ export interface Tile {
   cols: number;
   text: string;
   class: string;
+  href: string;
 }
 
 @Component({
@@ -23,11 +24,12 @@ export class PageOneComponent implements OnInit {
       text: 'DailyTarot',
       cols: 2,
       class: 'navTitle',
+      href: '/',
     },
-    { text: 'About', cols: 1, class: 'navText' },
-    { text: 'Features', cols: 1, class: 'navText' },
-    { text: 'Download', cols: 1, class: 'navText' },
-    { text: 'Contact', cols: 1, class: 'navText' },
+    { text: 'About', cols: 1, class: 'navText', href: '#about' },
+    { text: 'Features', cols: 1, class: 'navText', href: '#about' },
+    { text: 'Download', cols: 1, class: 'navText', href: '#about' },
+    { text: 'Contact', cols: 1, class: 'navText', href: '#about' },
   ];
 
   constructor() {

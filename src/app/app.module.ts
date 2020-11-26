@@ -8,9 +8,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { PageOneComponent } from './page-one/page-one.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { PageTwoComponent } from './page-two/page-two.component';
+import { PageThreeComponent } from './page-three/page-three.component';
 
 @NgModule({
-  declarations: [AppComponent, PageOneComponent, PageTwoComponent],
+  declarations: [AppComponent, PageOneComponent, PageTwoComponent, PageThreeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

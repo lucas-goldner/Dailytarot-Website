@@ -8,6 +8,11 @@
     Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .navTitle {
   font-weight: bold;
   font-size: xx-large;

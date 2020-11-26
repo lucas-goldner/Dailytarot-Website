@@ -1,0 +1,21 @@
+<mat-grid-list *ngIf="!isTouch" cols="3" rowHeight="6rem">
+  <mat-grid-tile rowspan="2" colspan="2"> Features of the App </mat-grid-tile>
+  <mat-grid-tile rowspan="6">
+    <img src="../../assets/images/phoneShow.png" />
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2"> Icon 1 </mat-grid-tile>
+  <mat-grid-tile rowspan="2"> Descr 1 </mat-grid-tile>
+  <mat-grid-tile rowspan="2"> Icon 2 </mat-grid-tile>
+  <mat-grid-tile rowspan="2"> Descr 2 </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list *ngIf="isTouch" cols="1" rowHeight="6rem">
+  <mat-grid-tile rowspan="2"> Features of the App </mat-grid-tile>
+  <mat-grid-tile rowspan="6">
+    <img src="../../assets/images/phoneShow.png" />
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2"> Icon 1 </mat-grid-tile>
+  <mat-grid-tile rowspan="2"> Descr 1 </mat-grid-tile>
+  <mat-grid-tile rowspan="2"> Icon 2 </mat-grid-tile>
+  <mat-grid-tile rowspan="2"> Descr 2 </mat-grid-tile>
+</mat-grid-list>
