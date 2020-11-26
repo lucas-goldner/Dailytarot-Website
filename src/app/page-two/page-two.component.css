@@ -1,0 +1,9 @@
+.pageTitle {
+  color: crimson;
+  font-weight: 100;
+  background-color: rgba(238, 130, 238, 0.3);
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: rgba(238, 130, 238, 0);
+}
