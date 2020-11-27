@@ -1,0 +1,80 @@
+.fiveContainer {
+  margin-top: 5rem;
+  background-color: rgba(116, 69, 144);
+  margin: 20px;
+  border-top-right-radius: 50px;
+  color: white;
+  padding: 1rem;
+}
+
+.con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.conXtra {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.conXtra {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  width: 20%;
+  border-radius: 50px;
+}
+
+.line {
+  width: 5rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  border: 1px solid white;
+}
+
+.MobDownloadImage {
+  height: 4rem;
+}
+
+.hoverMan {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hoverMan:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .MobDownloadImage {
+    height: 3rem;
+  }
+
+  .conXtra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #744590;
+    width: 100%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 0px;
+  }
+}

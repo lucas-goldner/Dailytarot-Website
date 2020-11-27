@@ -27,9 +27,9 @@ export class PageOneComponent implements OnInit {
       href: '/',
     },
     { text: 'About', cols: 1, class: 'navText', href: '#about' },
-    { text: 'Features', cols: 1, class: 'navText', href: '#about' },
-    { text: 'Download', cols: 1, class: 'navText', href: '#about' },
-    { text: 'Contact', cols: 1, class: 'navText', href: '#about' },
+    { text: 'Features', cols: 1, class: 'navText', href: '#features' },
+    { text: 'Download', cols: 1, class: 'navText', href: '#download' },
+    { text: 'Contact', cols: 1, class: 'navText', href: '#contact' },
   ];
 
   constructor() {

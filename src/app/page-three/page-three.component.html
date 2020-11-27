@@ -1,6 +1,8 @@
 <mat-grid-list *ngIf="!isTouch" cols="3" rowHeight="6rem">
   <mat-grid-tile rowspan="2" colspan="2"
-    ><h2 class="pageThreeTitle">Features of the App</h2></mat-grid-tile
+    ><h2 class="pageThreeTitle" id="features">
+      Features of the App
+    </h2></mat-grid-tile
   >
   <mat-grid-tile rowspan="7">
     <img src="../../assets/images/phoneShow.png" />
@@ -28,7 +30,9 @@
 
 <mat-grid-list *ngIf="isTouch" cols="1" rowHeight="6rem">
   <mat-grid-tile rowspan="2">
-    <h2 class="pageThreeTitle">Features of the App</h2></mat-grid-tile
+    <h2 class="pageThreeTitle" id="features">
+      Features of the App
+    </h2></mat-grid-tile
   >
   <mat-grid-tile rowspan="6">
     <img src="../../assets/images/phoneShow.png" />
